@@ -187,7 +187,7 @@ public class DiaryServiceTest {
         updateEntryRequest = new UpdateEntryRequest();
         updateEntryRequest.setTitle("My Story");
         updateEntryRequest.setBody("New Life");
-        updateEntryRequest.setAuthor("Solomon");
+        updateEntryRequest.setAuthor("solomon");
         updateEntryRequest.setId(1);
         diaryServices.updateEntryWith(updateEntryRequest);
         assertEquals("My Story", diaryServices.getEntriesFor("Solomon").getFirst().getTitle());
@@ -196,7 +196,7 @@ public class DiaryServiceTest {
     }
 
     @Test
-    public void testDiaryHasTwoEntryDeleteOneRemainOne() {
+    public void testEntryHasTwoEntryDeleteOneRemainOne() {
         request.setUserName("Solomon");
         request.setPassword("123456");
         diaryServices.register(request);

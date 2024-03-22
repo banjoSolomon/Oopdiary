@@ -106,6 +106,14 @@ public class DiaryServiceImpl implements DiaryServices {
         return entryService.getEntries(username);
     }
 
+    @Override
+    public Entry getEntry(int id, String username) {
+        Diary foundDiary = findDiaryBy(username.toLowerCase());
+        checkLockState(foundDiary);
+
+        return entryService.getEntry(id);
+    }
+
 
     public Diary findDiaryBy(String username) {
         Diary foundDiary = diaryRepository.findById(username.toLowerCase());

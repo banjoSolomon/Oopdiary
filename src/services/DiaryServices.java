@@ -24,6 +24,7 @@ public interface DiaryServices {
     void deleteEntry(int id, String username);
 
     List<Entry> getEntriesFor(String username);
+    Entry getEntry(int id, String username);
 
 }
 
