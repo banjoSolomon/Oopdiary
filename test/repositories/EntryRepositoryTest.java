@@ -1,7 +1,6 @@
 package repositories;
 
-import model.Diary;
-import model.Entry;
+import diaryFIle.model.Entry;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

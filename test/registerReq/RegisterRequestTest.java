@@ -1,6 +1,6 @@
 package registerReq;
 
-import dtos.requests.RegisterRequest;
+import diaryFIle.requests.RegisterRequest;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

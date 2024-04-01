@@ -1,14 +1,15 @@
 package diaryServices;
 
+import diaryFIle.requests.*;
 import dtos.requests.*;
-import exceptions.IncorrectPasswordException;
-import exceptions.UserAlreadyExistsException;
-import model.Entry;
+import diaryFIle.exceptions.IncorrectPasswordException;
+import diaryFIle.exceptions.UserAlreadyExistsException;
+import diaryFIle.model.Entry;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import services.DiaryServiceImpl;
-import services.EntryService;
-import services.EntryServiceImp;
+import diaryFIle.services.DiaryServiceImpl;
+import diaryFIle.services.EntryService;
+import diaryFIle.services.EntryServiceImp;
 
 import java.util.List;
 
